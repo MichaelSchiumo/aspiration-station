@@ -5,12 +5,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import dreamerReducer from './reducers/dreamerReducer'
+import manageDreamers from './reducers/manageDreamers'
 import { createStore }  from 'redux'
 // import rootReducer from './reducers'
 
 
-const store = createStore(dreamerReducer)
+const store = createStore(manageDreamers)
 
 ReactDOM.render(
   <Provider store={store}>
