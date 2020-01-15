@@ -1,6 +1,5 @@
 import React from 'react';
-import AspirationsContainer from './containers/AspirationsContainer'
-import logo from './logo.svg';
+import AspirationsContainer from './AspirationsContainer'
 import './App.css';
 
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Aspiration from './Aspiration';
 
 class Aspirations extends Component {
 
@@ -6,7 +7,13 @@ class Aspirations extends Component {
     const { aspirations, deleteAspiration, addAspiration} = this.props;
 
     return(
-      <div>'Is this working?'</div>
+      <div>
+        <div>Is this working?</div>
+        <Aspiration />
+      <div>
+
+        </div>
+      </div>
     )
   }
 }

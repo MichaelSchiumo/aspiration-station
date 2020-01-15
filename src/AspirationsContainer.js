@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Aspirations from '../components/aspirations.js';
+import Aspirations from './Aspirations'
+
+
 
 class AspirationsContainer extends Component {
 
