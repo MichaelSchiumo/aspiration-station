@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Aspirations from './Aspirations'
+import AspirationInput from './AspirationInput'
 
 
 
@@ -11,6 +12,7 @@ class AspirationsContainer extends Component {
     return(
       <div>
         <Aspirations />
+        <AspirationInput addAspiration={this.props.addAspiration} />
       </div>
     )
   }

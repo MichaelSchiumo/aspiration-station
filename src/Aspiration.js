@@ -10,7 +10,7 @@ class Aspiration extends Component {
     return (
       <div>
         <li>
-          <button> LEGGO</button>
+
         </li>
       </div>
     );

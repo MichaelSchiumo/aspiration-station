@@ -8,6 +8,7 @@ export default function manageDreamers(state = {
 
   switch (action.type) {
     case 'ADD_ASPIRATION':
+    console.log("test", action)
 
     const aspiration = {
       title: action.title,
