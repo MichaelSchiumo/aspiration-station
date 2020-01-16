@@ -21,7 +21,7 @@ class AspirationsContainer extends Component {
 const mapStateToProps = state => ({ aspirations: state.aspirations })
 
 const mapDispatchToProps = dispatch => ({
-  addAspiration: title => dispatch({type: 'ADD_ASPIRATION', title}),
+  addAspiration: aspiration => dispatch({type: 'ADD_ASPIRATION', aspiration}),
   deleteAspiration: id => dispatch({type: 'DELETE_ASPIRATION', id})
 })
 

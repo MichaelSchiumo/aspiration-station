@@ -2,33 +2,31 @@ import React, { Component } from 'react';
 
 class AspirationInput extends Component {
 
-  constructor(props) {
-    super(props);
 
-    this.state = {
+
+    state = {
       title: '',
       category: '',
-      timeframe: null,
+      timeframe: '',
       status: ''
     };
-  };
 
-  handleOnChange(event) {
+
+  handleOnChange = event => {
+
     this.setState({
-      title: event.target.value,
-      category: event.target.value,
-      timeframe: event.target.value,
-      status: event.target.value
+      [event.target.name]: event.target.value
     });
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = event => {
     event.preventDefault();
-    this.props.addAspiration(this.state)
+    const aspiration = this.state
+    this.props.addAspiration(aspiration)
     this.setState({
       title: '',
       category: '',
-      timeframe: null,
+      timeframe: '',
       status: ''
     });
   }
@@ -37,15 +35,15 @@ class AspirationInput extends Component {
     return (
       <div>
         <form onSubmit={(event) => this.handleOnSubmit(event)} >
-          <input
-            type="text"
-            value={this.state.title}
-            onChange={(event) => this.handleOnChange(event)} />
-          <input type="submit" />
+          <input placeholder="title" value={this.state.title} onChange={(event) => this.handleOnChange(event)} name="title" type="text"/><br/>
+          <input placeholder="category" value={this.state.category} onChange={(event) => this.handleOnChange(event)} name="category" type="text"/><br/>
+          <input placeholder="timeframe (in days)" value={this.state.timeframe} onChange={(event) => this.handleOnChange(event)} name="timeframe" type="text"/><br />
+          <input placeholder="status" value={this.state.status} onChange={(event) => this.handleOnChange(event)} name="status" type="text"/><br/>
+          <b><input type="submit" /></b>
         </form>
       </div>
     );
   }
 };
 
-export default AspirationInput;
+export default (AspirationInput);
