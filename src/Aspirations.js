@@ -11,19 +11,19 @@ class Aspirations extends Component {
   }
 
   render() {
-    const { aspirations, deleteAspiration, createAspiration} = this.props;
-    const aspirationList = aspirations.map(aspiration => {
-      console.log(aspirations)
-      return (
-        <Aspiration key={aspiration.id} aspiration={aspiration} deleteAspiration={deleteAspiration} />
-      )
-    })
+    // const { aspirations, deleteAspiration, createAspiration} = this.props;
+    // const aspirationList = aspirations.map(aspiration => {
+    //   console.log(aspirations)
+    // //   return (
+    // //     <Aspiration key={aspiration.id} aspiration={aspiration} deleteAspiration={deleteAspiration} />
+    // //   )
+    // })
 
     return(
       <div>
         <ul>
-          {aspirationList}
-
+          {console.log(this.props)}
+          {this.props.aspirations.aspirations.map(aspiration => <li>{aspiration.attributes.title}</li>)}
         </ul>
       <div>
 

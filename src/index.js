@@ -8,9 +8,9 @@ import manageAspirations from './reducers/manageAspirations'
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 // import rootReducer from './reducers'
+import store from './store'
 
 
-const store = createStore(combineReducers, applyMiddleware(thunk))
 
 ReactDOM.render(
   <Provider store={store}>

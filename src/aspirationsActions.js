@@ -20,7 +20,7 @@ export const createAspiration = (aspiration) => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({aspiration: aspiration})
+      body: JSON.stringify({aspiration})
     })
     .then(response => response.json())
     .then(aspiration => {
