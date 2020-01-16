@@ -5,11 +5,17 @@ class Aspirations extends Component {
 
   render() {
     const { aspirations, deleteAspiration, addAspiration} = this.props;
+    const aspirationList = aspirations.map(aspiration => {
+      return (
+        <Aspiration key={aspiration.id} aspiration={aspiration} deleteAspiration={deleteAspiration} />
+      )
+    })
 
     return(
       <div>
-        <div>Is this working?</div>
-        <Aspiration />
+        <ul>
+          {aspirationList}
+        </ul>
       <div>
 
         </div>

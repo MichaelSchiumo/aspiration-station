@@ -11,7 +11,7 @@ class AspirationsContainer extends Component {
   render() {
     return(
       <div>
-        <Aspirations />
+        <Aspirations aspirations={this.props.aspirations}/>
         <AspirationInput addAspiration={this.props.addAspiration} />
       </div>
     )
