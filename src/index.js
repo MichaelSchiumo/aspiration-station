@@ -1,16 +1,16 @@
 import React from 'react';
-// import { render } from 'react-dom'
 import { Provider } from "react-redux"
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import manageDreamers from './reducers/manageDreamers'
-import { createStore }  from 'redux'
+import manageAspirations from './reducers/manageAspirations'
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 // import rootReducer from './reducers'
 
 
-const store = createStore(manageDreamers)
+const store = createStore(combineReducers, applyMiddleware(thunk))
 
 ReactDOM.render(
   <Provider store={store}>

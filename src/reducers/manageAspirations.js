@@ -8,18 +8,9 @@ export default function manageDreamers(state = {
 
   switch (action.type) {
     case 'ADD_ASPIRATION':
-    console.log("test", action)
-
-    const aspiration = {
-      title: action.title,
-      category: action.category,
-      timeframe: action.timeframe,
-      status: action.status,
-      id: uuid()
-    };
-
+    console.log('add aspiration')
     return {
-      ...state, aspirations: [...state.aspirations, aspiration]
+      ...state, aspirations: [...state.aspirations, action.payload]
     }
 
     case 'DELETE_ASPIRATION':
@@ -27,6 +18,10 @@ export default function manageDreamers(state = {
     const aspirations = state.aspirations.filter(aspiration => aspiration.id !== action.id);
 
     return {...state, aspirations}
+
+    case 'LOAD_ASPIRATIONS':
+
+    return { aspirations: action.aspirations }
 
     default:
       return state

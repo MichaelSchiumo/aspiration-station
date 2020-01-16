@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Aspirations from './Aspirations'
 import AspirationInput from './AspirationInput'
+import { createAspiration } from './aspirationsActions'
 
 
 
@@ -12,7 +13,7 @@ class AspirationsContainer extends Component {
     return(
       <div>
         <Aspirations aspirations={this.props.aspirations}/>
-        <AspirationInput addAspiration={this.props.addAspiration} />
+        <AspirationInput createAspiration={this.props.createAspiration} />
       </div>
     )
   }
@@ -20,9 +21,12 @@ class AspirationsContainer extends Component {
 
 const mapStateToProps = state => ({ aspirations: state.aspirations })
 
-const mapDispatchToProps = dispatch => ({
-  addAspiration: aspiration => dispatch({type: 'ADD_ASPIRATION', aspiration}),
-  deleteAspiration: id => dispatch({type: 'DELETE_ASPIRATION', id})
-})
+// const mapDispatchToProps = dispatch => ({
+//   // addAspiration: aspiration => dispatch({type: 'ADD_ASPIRATION', aspiration}),
+//   createAspiration: aspiration => dispatch(createAspiration(aspiration))
+//   deleteAspiration: id => dispatch({type: 'DELETE_ASPIRATION', id})
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(AspirationsContainer)
+// export default connect(mapStateToProps, mapDispatchToProps)(AspirationsContainer)
+
+export default connect(mapStateToProps, {createAspiration})(AspirationsContainer)

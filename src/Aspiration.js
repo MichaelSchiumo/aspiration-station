@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
+import { CREATE_ASPIRATION } from './aspirationsActions'
 
 
-class Aspiration extends Component {
 
+const Aspiration = props => {
 
-  render() {
-    const { aspiration } = this.props;
+  return (
+  <div>
+    
+    {console.log(props)}
+      {props.aspiration.attributes.title}
+  </div>
 
-    return (
-      <div>
-        <li>
-
-        </li>
-      </div>
-    );
-  }
-};
+)
+}
 
 export default Aspiration;
