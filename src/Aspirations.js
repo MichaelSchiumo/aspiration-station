@@ -19,11 +19,26 @@ class Aspirations extends Component {
     // //   )
     // })
 
+
+
+
     return(
       <div>
         <ul>
           {console.log(this.props)}
-          {this.props.aspirations.aspirations.map(aspiration => <li>{aspiration.attributes.title}</li>)}
+          {this.props.aspirations.aspirations.map(aspiration =>
+            <div>
+              <div class="card" key={aspiration.id}>
+                <h2>{aspiration.attributes.title}</h2>
+                <b><label>Category</label></b>
+                <i><p>{aspiration.attributes.category}</p></i>
+                <b><label>Timeframe</label></b>
+                <i><p>{aspiration.attributes.timeframe} days</p></i>
+                <b><label>Status</label></b>
+                <i><p>{aspiration.attributes.status}</p></i>
+              </div>
+            </div>
+          )}
         </ul>
       <div>
 
