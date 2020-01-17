@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+// import uuid from 'uuid';
 // export const cuidFn = cuid;
 
 export default function manageAspirations(state = [], action) {
@@ -17,9 +17,12 @@ export default function manageAspirations(state = [], action) {
 
     case 'DELETE_ASPIRATION':
 
-    const aspirations = state.aspirations.filter(aspiration => aspiration.id !== action.id);
+    const aspirations = state.filter(aspiration => aspiration.id !== action.payload);
+    console.log(action.payload)
+    return aspirations
 
-    return {...state, aspirations}
+
+
 
     case 'LOAD_ASPIRATIONS':
 

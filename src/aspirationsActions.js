@@ -31,24 +31,26 @@ export const createAspiration = (aspiration) => {
       dispatch(addAspiration(aspiration))
     })
     .catch(error => {
-      dispatch({type: 'asdf', payload: error })
+      dispatch({type: 'CREATE_ASPIRATION', payload: error })
     })
   }
 }
 
 
-export const deleteAspirations = (aspiration, id) => {
+export const deleteAspirations = (aspiration) => {
+
     return dispatch => {
-      return fetch('http://localhost:3001/aspiration', {
+      return fetch(`http://localhost:3001/aspirations/${aspiration.id}`, {
         method: 'DELETE'
       })
-      .then(response => response.json());
+      .then(response => response.json())
+      .then(data => {
+        // history.push('/aspirations')
+        console.log(data)
+        dispatch({type: 'DELETE_ASPIRATION', payload: aspiration.id })
+      })
+
     }
   }
 
-// export const deleteAspiration = (id) => {
-//     return {
-//         type: actionTypes.REMOVE_CONTACT,
-//         id: id
-//     }
-// }
+  //pass history as an argument to deleteAspirations

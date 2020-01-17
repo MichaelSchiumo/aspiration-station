@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+// import { deleteAspirations } from './aspirationsActions'
 
 class Aspiration extends Component {
 
-  handleOnClick() {
-    debugger
-  this.props.deleteAspirations(this.props.aspiration.id);
+  handleOnClick = event => {
+    
+  this.props.deleteAspirations(this.props.aspiration);
 }
 
+// this.props.deleteAspirations(this.props.aspiration, this.props.history);
 
 render() {
   const { aspiration, deleteAspirations } = this.props;
-
   return (
     <div>
       <div>
@@ -23,7 +25,7 @@ render() {
           <b><label>Status</label></b>
           <i><p>{aspiration.status}</p></i>
         </div>
-        <button onClick={this.handleOnClick}></button>
+        <button onClick={(event) => this.handleOnClick(event)}></button>
       </div>
     </div>
   );
@@ -33,3 +35,7 @@ render() {
 
 
 export default Aspiration;
+
+// rerender using history
+//pass down history
+//history comes from component with routes

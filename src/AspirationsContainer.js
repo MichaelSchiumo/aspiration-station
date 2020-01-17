@@ -12,14 +12,14 @@ class AspirationsContainer extends Component {
   render() {
     return(
       <div>
-        <Aspirations aspirations={this.props.aspirations}/>
+        <Aspirations />
         <AspirationInput createAspiration={this.props.createAspiration} />
       </div>
     )
   }
 }
 
-const mapStateToProps = state => ({ aspirations: state.aspirations })
+// const mapStateToProps = state => ({ aspirations: state.aspirations })
 
 // const mapDispatchToProps = dispatch => ({
 //   // addAspiration: aspiration => dispatch({type: 'ADD_ASPIRATION', aspiration}),
@@ -27,6 +27,9 @@ const mapStateToProps = state => ({ aspirations: state.aspirations })
 //   deleteAspiration: id => dispatch({type: 'DELETE_ASPIRATION', id})
 // })
 
-// export default connect(mapStateToProps, mapDispatchToProps)(AspirationsContainer)
 
-export default connect(mapStateToProps, {createAspiration})(AspirationsContainer)
+export default connect(null, {createAspiration} )(AspirationsContainer)
+
+//connect connects React components to Redux functionality
+//get rid of Redux (refactor)
+//we have access to the aspirations component through import at the top of this file

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { fetchAspirations, deleteAspirations } from './aspirationsActions';
 
 
+
 class Aspirations extends Component {
 
   componentDidMount() {
@@ -21,7 +22,7 @@ class Aspirations extends Component {
             <Aspiration
             key={aspiration.id}
             aspiration={aspiration}
-            deleteAspirations={deleteAspirations}
+            deleteAspirations={this.props.deleteAspirations}
         />
           )
         })}
@@ -35,3 +36,4 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps, { fetchAspirations, deleteAspirations })(Aspirations);
+// export default connect(null, { fetchAspirations, deleteAspirations })(Aspirations);
