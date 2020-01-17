@@ -4,10 +4,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import manageAspirations from './reducers/manageAspirations'
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-// import rootReducer from './reducers'
 import store from './store'
 
 
