@@ -18,7 +18,7 @@ export default function manageAspirations(state = [], action) {
     case 'DELETE_ASPIRATION':
 
     const aspirations = state.filter(aspiration => aspiration.id !== action.payload);
-    console.log(action.payload)
+    
     return aspirations
 
 

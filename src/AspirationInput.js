@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { createAspiration } from './aspirationsActions'
 
 class AspirationInput extends Component {
 
@@ -59,4 +61,12 @@ class AspirationInput extends Component {
   }
 };
 
-export default (AspirationInput);
+const mapStateToProps = state => {
+  return ({aspirations: state.aspirations})
+}
+
+const mapDispatchToProps = dispatch => ({
+  createAspiration: aspiration => dispatch(createAspiration(aspiration))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(AspirationInput);

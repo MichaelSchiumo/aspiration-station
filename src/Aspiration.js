@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Aspiration extends Component {
 
   handleOnClick = event => {
-    
+
   this.props.deleteAspirations(this.props.aspiration);
 }
 
@@ -13,6 +13,7 @@ class Aspiration extends Component {
 
 render() {
   const { aspiration, deleteAspirations } = this.props;
+
   return (
     <div>
       <div>
@@ -39,3 +40,6 @@ export default Aspiration;
 // rerender using history
 //pass down history
 //history comes from component with routes
+
+
+//create navbar
