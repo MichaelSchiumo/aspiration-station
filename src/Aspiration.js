@@ -16,15 +16,16 @@ render() {
 
   return (
     <div>
+      
       <div>
         <div className="card" key={aspiration.id}>
-          <h2>{aspiration.title}</h2>
+          <br /><h2>{aspiration.title}</h2>
           <b><label>Category</label></b>
           <i><p>{aspiration.category}</p></i>
           <b><label>Timeframe</label></b>
           <i><p>{aspiration.timeframe} days</p></i>
           <b><label>Status</label></b>
-          <i><p>{aspiration.status}</p></i>
+          <i><p>{aspiration.status}</p></i><br />
         </div>
         <button onClick={(event) => this.handleOnClick(event)}></button>
       </div>
