@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Aspirations from './Aspirations'
-import { createAspiration } from './aspirationsActions'
+// import Aspirations from './Aspirations'
+import { createDreamer } from './DreamerActions'
+import DreamerInput from './DreamerInput'
+import Dreamer from './Dreamer'
 
 
 
-class AspirationsContainer extends Component {
+class DreamersContainer extends Component {
 
 
   render() {
 
     return(
       <div>
-        <Aspirations />
+        
+        <DreamerInput />
 
       </div>
     )
@@ -21,7 +24,7 @@ class AspirationsContainer extends Component {
 
 
 
-export default connect(null, {createAspiration} )(AspirationsContainer)
+export default connect(null, {createDreamer} )(DreamersContainer)
 
 //connect connects React components to Redux functionality
 //get rid of Redux (refactor)

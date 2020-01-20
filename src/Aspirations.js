@@ -17,9 +17,10 @@ class Aspirations extends Component {
     return (
       <div>
         {(this.props.aspirations.length > 1) ?
-           <h3>You have {this.props.aspirations.length} aspirations!</h3> :
-
-           <h3>You have {this.props.aspirations.length} aspiration!</h3>}
+           <h3>You have {this.props.aspirations.length} aspirations!</h3>
+                                  :
+           <h3>You have {this.props.aspirations.length} aspiration!</h3>
+        }
 
 
         {this.props.aspirations.map((aspiration) => {

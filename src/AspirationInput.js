@@ -13,9 +13,7 @@ class AspirationInput extends Component {
       category: '',
       timeframe: '',
       status: '',
-      age: '',
-      name: '',
-      sex: ''
+
     };
 
 
@@ -36,9 +34,7 @@ class AspirationInput extends Component {
       category: '',
       timeframe: '',
       status: '',
-      age: '',
-      name: '',
-      sex: ''
+
     });
   }
 
@@ -47,9 +43,6 @@ class AspirationInput extends Component {
       <div>
         <label>Add a New Aspiration!</label>
         <form onSubmit={(event) => this.handleOnSubmit(event)} >
-          <input placeholder="Name" value={this.state.name} onChange={(event) => this.handleOnChange(event)} name="name" type="text"/><br/>
-          <input placeholder="Age" value={this.state.age} onChange={(event) => this.handleOnChange(event)} name="age" type="text"/><br/>
-          <input placeholder="Sex" value={this.state.sex} onChange={(event) => this.handleOnChange(event)} name="sex" type="text"/><br/>
           <input placeholder="Title" value={this.state.title} onChange={(event) => this.handleOnChange(event)} name="title" type="text"/><br/>
           <input placeholder="Category" value={this.state.category} onChange={(event) => this.handleOnChange(event)} name="category" type="text"/><br/>
           <input placeholder="Timeframe (in days)" value={this.state.timeframe} onChange={(event) => this.handleOnChange(event)} name="timeframe" type="text"/><br />
