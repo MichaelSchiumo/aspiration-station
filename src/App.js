@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from './NavBar';
 import AspirationsContainer from './AspirationsContainer';
 import Aspirations from './Aspirations';
 import Aspiration from './Aspiration';
@@ -20,6 +21,7 @@ function App() {
     <Router history={history}>
       <div className="App">
         <header className="App-header">
+          <NavBar />
           <Route exact path={'/'} component={AspirationsContainer} />
           <Route exact path={'/aspirations'} component={Aspirations} />
           <Route exact path={'/aspirations/new'} component={AspirationInput} />
