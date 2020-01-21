@@ -4,9 +4,7 @@ import { createDreamer } from './DreamerActions'
 
 class DreamerInput extends Component {
 
-//create two separate forms
-//on aspiration form, have a select to choose a preexisting dreamer
-//toggle form under individual dreamer
+
 
     state = {
       name: '',
@@ -24,9 +22,9 @@ class DreamerInput extends Component {
   }
 
   handleOnSubmit = event => {
+
     event.preventDefault();
     const dreamer = this.state
-    console.log(dreamer)
     this.props.createDreamer(dreamer)
     this.setState({
       name: '',
@@ -37,7 +35,7 @@ class DreamerInput extends Component {
   }
 
   render() {
-  debugger
+
     return (
       <div>
         <label>Create Your Profile!</label>

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { createDreamer } from './DreamerActions'
 import DreamerInput from './DreamerInput'
 import Dreamer from './Dreamer'
+import Dreamers from './Dreamers'
 
 
 
@@ -11,11 +12,11 @@ class DreamersContainer extends Component {
 
 
   render() {
-
+     console.log(this.props)
     return(
       <div>
-        
-        <DreamerInput />
+
+        <Dreamers />
 
       </div>
     )

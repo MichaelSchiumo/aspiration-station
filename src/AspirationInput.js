@@ -27,15 +27,14 @@ class AspirationInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const aspiration = this.state
-    console.log(aspiration)
     this.props.createAspiration(aspiration)
     this.setState({
       title: '',
       category: '',
       timeframe: '',
       status: '',
-
     });
+    return <div>Aspiration Created!</div>
   }
 
   render() {

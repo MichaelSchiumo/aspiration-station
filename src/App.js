@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import Dreamer from './Dreamer'
 import DreamersContainer from './DreamersContainer'
 import DreamerInput from './DreamerInput'
+import Dreamers from './Dreamer'
 import AspirationsContainer from './AspirationsContainer';
 import Aspirations from './Aspirations';
 import Aspiration from './Aspiration';
@@ -26,9 +27,9 @@ function App() {
       <div className="App">
         <header className="App-header">
           <NavBar />
-          <Route exact path={'/dreamer/new'} component={DreamerInput} />
-          <Route exact path={'/dreamer'} component={DreamersContainer} />
-          <Route exact path={'/dreamer/:id'} component={Dreamer} />
+          <Route exact path={'/dreamers/new'} component={DreamerInput} />
+          <Route exact path={'/dreamers'} component={DreamersContainer} />
+          <Route exact path={'/dreamers/:id'} component={Dreamer} />
           <Route exact path={'/'} component={AspirationsContainer} />
           <Route exact path={'/aspirations'} component={Aspirations} />
           <Route exact path={'/aspiration/:id'} component={Aspiration} />

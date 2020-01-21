@@ -13,7 +13,7 @@ export const fetchDreamer = () => {
 }
 
 const addDreamer = (dreamer) => {
-  return {type: 'ADD_DREAMER', payload: dreamer}
+  return {type: 'ADD_DREAMER', payload: dreamer.data}
 }
 
 export const createDreamer = (dreamer) => {
@@ -27,7 +27,7 @@ export const createDreamer = (dreamer) => {
     })
     .then(response => response.json())
     .then(dreamer => {
-
+      debugger
       dispatch(addDreamer(dreamer))
     })
     .catch(error => {
