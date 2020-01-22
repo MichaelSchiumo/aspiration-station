@@ -1,2 +1,5 @@
 -fix the timeframe property to be how many times per week
 -add quotes and songs controller
+-In navbar component, add conditional rendering.
+  -if a user is already signed up, don't display create profile - display view profile
+  -For about section, remove all links except create dreamer profile

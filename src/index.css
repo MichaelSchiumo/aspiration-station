@@ -2,6 +2,10 @@ li {
     padding: 10px 0;
 }
 
+.ul {
+  position: center;
+}
+
 div {
   color: white;
   outline-color: white;
@@ -52,8 +56,15 @@ code {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+}
 
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,10,1);
+}
 
+.card2 {
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -67,8 +78,9 @@ code {
 }
 
 .square {
-  position: relative;
-  width: 50%;
+    position: relative;
+    width: 25vw;
+    height: 25vw;
 }
 
 .square:after {
@@ -81,4 +93,28 @@ code {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+
+
+.square-box{
+    position: center;
+    width: 50%;
+    overflow: hidden;
+    background: #4679BD;
+}
+
+.square-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+  width: 240px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+.square-content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,10,1);
 }

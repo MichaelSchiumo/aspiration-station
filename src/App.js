@@ -9,7 +9,7 @@ import Aspirations from './components/Aspirations';
 import Aspiration from './components/Aspiration';
 import AspirationInput from './forms/AspirationInput'
 import { Router, Route} from 'react-router-dom';
-// import { FaAlignRight } from 'react-icons/fa'
+import About from './components/About';
 import './App.css';
 import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();
@@ -27,6 +27,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <NavBar />
+          <Route exact path={'/about'} component={About} />
           <Route exact path={'/dreamers/new'} component={DreamerInput} />
           <Route exact path={'/dreamers'} component={DreamersContainer} />
           <Route exact path={'/dreamers/:id'} component={Dreamer} />
