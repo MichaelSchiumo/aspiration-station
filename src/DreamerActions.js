@@ -27,7 +27,7 @@ export const createDreamer = (dreamer) => {
     })
     .then(response => response.json())
     .then(dreamer => {
-      debugger
+      
       dispatch(addDreamer(dreamer))
     })
     .catch(error => {

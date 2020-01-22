@@ -47,7 +47,8 @@ class AspirationInput extends Component {
           <input placeholder="Timeframe (in days)" value={this.state.timeframe} onChange={(event) => this.handleOnChange(event)} name="timeframe" type="text"/><br />
           <input placeholder="Status" value={this.state.status} onChange={(event) => this.handleOnChange(event)} name="status" type="text"/><br/>
           <b><input type="submit" /></b>
-        </form>
+        </form><br />
+      <h15>Click on the View Current Aspirations tab to See Your Current Dreams!</h15><br></br>
       </div>
     );
   }

@@ -16,8 +16,7 @@ render() {
 
   return (
     <div>
-      
-      <div>
+
         <div className="card" key={aspiration.id}>
           <br /><h2>{aspiration.title}</h2>
           <b><label>Category</label></b>
@@ -26,9 +25,9 @@ render() {
           <i><p>{aspiration.timeframe} days</p></i>
           <b><label>Status</label></b>
           <i><p>{aspiration.status}</p></i><br />
+          <button onClick={this.handleOnClick}></button>
         </div>
-        <button onClick={(event) => this.handleOnClick(event)}></button>
-      </div>
+      
     </div>
   );
 }

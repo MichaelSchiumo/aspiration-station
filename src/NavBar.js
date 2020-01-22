@@ -21,15 +21,18 @@ class Navbar extends Component {
           <h2>
              <NavLink className="Nav-Link" style={{ marginRight: '10px' }} to="/aspirations">View Current Aspirations</NavLink>
              <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/aspirations/new">Create New Aspirations</NavLink>
-             <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink>
+
            </h2>
         </div>
       </div>
 
     )
+  }
 }
-}
-
-
-
 export default Navbar;
+
+//connect components to state with users (store with current user)
+//map current user to navlink
+//do conditional logic
+
+{/* <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink> */}
