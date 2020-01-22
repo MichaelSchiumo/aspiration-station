@@ -1,15 +1,15 @@
 import React from 'react';
-import NavBar from './NavBar';
-import Dreamer from './Dreamer'
-import DreamersContainer from './DreamersContainer'
-import DreamerInput from './DreamerInput'
-import Dreamers from './Dreamer'
-import AspirationsContainer from './AspirationsContainer';
-import Aspirations from './Aspirations';
-import Aspiration from './Aspiration';
-import AspirationInput from './AspirationInput'
+import NavBar from './components/NavBar';
+import Dreamer from './components/Dreamer'
+import DreamersContainer from './containers/DreamersContainer'
+import DreamerInput from './forms/DreamerInput'
+// import Dreamers from './components/Dreamers'
+import AspirationsContainer from './containers/AspirationsContainer';
+import Aspirations from './components/Aspirations';
+import Aspiration from './components/Aspiration';
+import AspirationInput from './forms/AspirationInput'
 import { Router, Route} from 'react-router-dom';
-import { FaAlignRight } from 'react-icons/fa'
+// import { FaAlignRight } from 'react-icons/fa'
 import './App.css';
 import { createBrowserHistory } from 'history';
 const history = createBrowserHistory();

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Aspirations from './Aspirations'
-import { createAspiration } from './aspirationsActions'
+import Aspirations from '../components/Aspirations'
+import { createAspiration } from '../actions/aspirationsActions'
 
 
 

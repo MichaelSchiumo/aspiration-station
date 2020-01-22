@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { connect } from 'react-redux';
-// import { deleteAspirations } from './aspirationsActions'
+// import { deleteAspirations } from '../actions/aspirationsActions'
 
 class Aspiration extends Component {
 
@@ -27,7 +27,7 @@ render() {
           <i><p>{aspiration.status}</p></i><br />
           <button onClick={this.handleOnClick}></button>
         </div>
-      
+
     </div>
   );
 }

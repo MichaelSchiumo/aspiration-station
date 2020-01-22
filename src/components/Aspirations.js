@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Aspiration from './Aspiration';
 import { connect } from 'react-redux';
-import { fetchAspirations, deleteAspirations } from './aspirationsActions';
+import { fetchAspirations, deleteAspirations } from '../actions/aspirationsActions';
 
 
 
@@ -24,7 +24,7 @@ class Aspirations extends Component {
 
         }
 
-        {(this.props.aspirations.length != 0) ?
+        {(this.props.aspirations.length !== 0) ?
           <h5>Click the white box below to remove an aspiration.</h5>
                                   :
                                   <div></div>
@@ -42,7 +42,7 @@ class Aspirations extends Component {
           )
         })}
       </div>
-    
+
     )
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createDreamer } from './DreamerActions'
+import { createDreamer } from '../actions/DreamerActions'
 
 class DreamerInput extends Component {
 
@@ -22,7 +22,6 @@ class DreamerInput extends Component {
   }
 
   handleOnSubmit = event => {
-
     event.preventDefault();
     const dreamer = this.state
     this.props.createDreamer(dreamer)
@@ -35,7 +34,6 @@ class DreamerInput extends Component {
   }
 
   render() {
-
     return (
       <div>
         <label>Create Your Profile!</label>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createAspiration } from './aspirationsActions'
+import { createAspiration } from '../actions/aspirationsActions'
 
 class AspirationInput extends Component {
 

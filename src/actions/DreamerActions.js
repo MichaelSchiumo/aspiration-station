@@ -1,6 +1,7 @@
 
 
 export const fetchDreamer = () => {
+
   return (dispatch) => {
     // dispatch({ type: 'LOAD_ASPIRATIONS'})
     fetch('http://localhost:3001/dreamers').then(response => {
@@ -17,6 +18,7 @@ const addDreamer = (dreamer) => {
 }
 
 export const createDreamer = (dreamer) => {
+
   return dispatch => {
     return fetch('http://localhost:3001/dreamers', {
       method: "POST",
@@ -27,7 +29,7 @@ export const createDreamer = (dreamer) => {
     })
     .then(response => response.json())
     .then(dreamer => {
-      
+
       dispatch(addDreamer(dreamer))
     })
     .catch(error => {
