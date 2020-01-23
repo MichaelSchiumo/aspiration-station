@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import Dreamer from './Dreamer';
 import { connect } from 'react-redux';
 import { fetchDreamer } from '../actions/DreamerActions.js';
+import NavBar from './NavBar'
 
 
 
@@ -14,18 +15,16 @@ class Dreamers extends Component {
 
 
   render() {
-
+    const dreamers = this.props.dreamers
+    const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
     return (
-    <div>
-      const filteredDreamers = this.props.dreamers.map(name => dreamer.name === name)
-      {this.props.dreamers.map(dreamer => {
-        return (
-          <div>
-            <ul>{dreamer.name}</ul>
-          </div>
-        )
-      })}
-    </div>
+      <div>
+        {filteredDreamers.map((dreamer) => {
+          return (
+            <div>{dreamer.name}</div>
+          )
+        })}
+      </div>
 
     )
   }
