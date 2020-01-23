@@ -14,8 +14,18 @@ class Dreamers extends Component {
 
 
   render() {
-
-    return ( <div>Te</div>
+    console.log(this.props)
+    return (
+    <div>
+      Dreamers
+      {this.props.dreamers.map((dreamer) => {
+        return (
+          <div>
+            <ul key={dreamer.name}>{dreamer.name}</ul>
+          </div>
+        )
+      })}
+    </div>
       // <div>
       //
       //   // {this.props.dreamers.map((dreamer) => {
