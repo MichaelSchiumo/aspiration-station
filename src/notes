@@ -9,3 +9,14 @@
   -write logic to fetch all aspirations with userID of xxxx
     -foundDreamer will be a currentUser
       -when we fill out form, if we have existing user, we filter out aspirations by that user ID
+
+
+-inspo container
+  -songs card
+  -quotes card
+  -song form
+  -quote form
+
+
+
+  -fix form css

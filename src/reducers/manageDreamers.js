@@ -14,18 +14,11 @@ export default function manageDreamers(state = [], action) {
     ]
 
 
-    //
-    // case 'DELETE_DREAMER':
-    //
-    // const dreamers = state.filter(dreamer => dreamer.id !== action.payload);
-    //
-    // return dreamers
-
 
 
 
     case 'LOAD_DREAMER':
-    
+
     return [
       ...action.dreamer.reduce((newObj, eleObj) => {
         const dreamer = {
