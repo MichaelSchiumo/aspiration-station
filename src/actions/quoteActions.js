@@ -53,5 +53,3 @@ export const deleteQuotes = (quote) => {
 
     }
   }
-
-  //pass history as an argument to deleteAspirations
