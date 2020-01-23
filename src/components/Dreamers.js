@@ -20,26 +20,22 @@ class Dreamers extends Component {
     const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
     console.log(dreamers)
     return (
-
       <div>
         {filteredDreamers.map((dreamer) => {
           return (
 
-              <div class="w3-card-4">
+              <div key={dreamer.id} class="w3-card-4">
 
               <header class="w3-container w3-light-grey">
-                <h3>John Doe</h3>
+                <u><i><h1 style={{textTransform: 'capitalize'}}>{dreamer.name}</h1></i></u>
               </header>
 
               <div class="w3-container">
-                <p>1 new friend request</p>
+                <h2>{dreamer.age} years and still going strong!</h2>
 
 
-                <p>President/CEO at Mighty Schools...</p>
+                <p>Passion?</p>
               </div>
-
-              <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
-
             </div>
           )
         })}
