@@ -40,42 +40,9 @@ class Dreamers extends Component {
           )
         })}
       </div>
-
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const mapStateToProps = state => {
