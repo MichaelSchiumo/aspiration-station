@@ -17,7 +17,7 @@ class Dreamers extends Component {
 
     return (
     <div>
-      const filteredDreamers = this.props.dreamers.map(dreamer => dreamer.id === action.id)
+      const filteredDreamers = this.props.dreamers.map(name => dreamer.name === name)
       {this.props.dreamers.map(dreamer => {
         return (
           <div>
