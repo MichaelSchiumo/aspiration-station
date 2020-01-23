@@ -15,7 +15,9 @@ class Dreamers extends Component {
 
 
   render() {
+
     const dreamers = this.props.dreamers
+    const currentUser = this.props.dreamers.filter(id => dreamers.id === this.props.id)
     const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
     return (
       <div>
