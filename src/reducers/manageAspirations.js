@@ -34,9 +34,9 @@ export default function manageAspirations(state = [], action) {
           category: eleObj.attributes.category,
           timeframe: eleObj.attributes.timeframe,
           status: eleObj.attributes.status,
-          name: eleObj.attributes.name,
-          age: eleObj.attributes.age,
-          sex: eleObj.attributes.sex
+          // name: eleObj.attributes.name,
+          // age: eleObj.attributes.age,
+          // sex: eleObj.attributes.sex
         }
         newObj.push(aspiration)
         return newObj

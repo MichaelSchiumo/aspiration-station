@@ -3,10 +3,12 @@
 export const fetchDreamer = () => {
 
   return (dispatch) => {
+
     // dispatch({ type: 'LOAD_ASPIRATIONS'})
     fetch('http://localhost:3001/dreamers').then(response => {
       return response.json()
     }).then(responseJSON => {
+    
       // console.log("test2")
       dispatch({ type: 'LOAD_DREAMER', dreamer: responseJSON.data })
     })

@@ -8,7 +8,7 @@ import NavBar from './NavBar'
 
 class Dreamers extends Component {
 
-  componentDidMount() {
+  componentShouldMount() {
     this.props.fetchDreamer()
   }
 
@@ -19,11 +19,13 @@ class Dreamers extends Component {
     const dreamers = this.props.dreamers
     const currentUser = this.props.dreamers.filter(id => dreamers.id === this.props.id)
     const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
+    console.log(filteredDreamers)
     return (
+
       <div>
         {filteredDreamers.map((dreamer) => {
           return (
-            <div>{dreamer.name}</div>
+            <div><li>{dreamer.attributes.name}</li></div>
           )
         })}
       </div>

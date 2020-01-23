@@ -12,7 +12,7 @@ class Navbar extends Component {
 
   render() {
     const {currentUser} = this.props
-    console.log(this.props)
+
 
     return(
       <div className="NavBar">
@@ -22,13 +22,13 @@ class Navbar extends Component {
 
 
           <div style={{ borderBottom: '2px solid black', paddingBottom: '10px', marginBottom: '12px' }}>
-            <h2>
+            <h3>
                <NavLink className="Nav-Link" style={{ marginRight: '10px' }} to="/aspirations">View Current Aspirations</NavLink>
                <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/aspirations/new">Create New Aspirations</NavLink>
               {(this.props.dreamers.length < 1) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink> : ''}
                <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers">View Dreamer Profile</NavLink>
 
-             </h2>
+             </h3>
           </div>
         </div>)
     }
