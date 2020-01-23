@@ -8,10 +8,9 @@ import NavBar from './NavBar'
 
 class Dreamers extends Component {
 
-  componentShouldMount() {
+  componentDidMount() {
     this.props.fetchDreamer()
   }
-
 
 
   render() {
@@ -19,13 +18,29 @@ class Dreamers extends Component {
     const dreamers = this.props.dreamers
     const currentUser = this.props.dreamers.filter(id => dreamers.id === this.props.id)
     const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
-    console.log(filteredDreamers)
+    console.log(dreamers)
     return (
 
       <div>
         {filteredDreamers.map((dreamer) => {
           return (
-            <div><li>{dreamer.attributes.name}</li></div>
+
+              <div class="w3-card-4">
+
+              <header class="w3-container w3-light-grey">
+                <h3>John Doe</h3>
+              </header>
+
+              <div class="w3-container">
+                <p>1 new friend request</p>
+
+
+                <p>President/CEO at Mighty Schools...</p>
+              </div>
+
+              <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+
+            </div>
           )
         })}
       </div>
@@ -33,6 +48,39 @@ class Dreamers extends Component {
     )
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const mapStateToProps = state => {
   return { dreamers: state.dreamers }
