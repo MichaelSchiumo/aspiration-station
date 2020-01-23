@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Dreamer from './Dreamer';
+import Dreamer from './Dreamer';
 import { connect } from 'react-redux';
 import { fetchDreamer } from '../actions/DreamerActions.js';
 
@@ -8,14 +8,14 @@ import { fetchDreamer } from '../actions/DreamerActions.js';
 class Dreamers extends Component {
 
   componentDidMount() {
-
     this.props.fetchDreamer()
   }
 
 
 
   render() {
-    return ( <div>hi</div>
+    
+    return ( <div></div>
       // <div>
       //
       //   // {this.props.dreamers.map((dreamer) => {

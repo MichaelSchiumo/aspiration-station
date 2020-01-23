@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { createDreamer } from '../actions/DreamerActions'
+import { createDreamer, fetchDreamer } from '../actions/DreamerActions'
+
 
 class DreamerInput extends Component {
 
@@ -13,6 +14,10 @@ class DreamerInput extends Component {
 
     };
 
+    componentDidMount() {
+      console.log("test",this.props)
+      this.props.fetchDreamer()
+    }
 
   handleOnChange = event => {
 
@@ -24,7 +29,13 @@ class DreamerInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const dreamer = this.state
-    this.props.createDreamer(dreamer)
+    const foundDreamer = this.props.dreamer.find(name => this.state.name === name )
+    if (foundDreamer) {
+      console.log(foundDreamer)
+    } else {
+        this.props.createDreamer(dreamer)
+    }
+    
     this.setState({
       name: '',
       age: '',
@@ -53,7 +64,8 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => ({
-  createDreamer: dreamer => dispatch(createDreamer(dreamer))
+  createDreamer: dreamer => dispatch(createDreamer(dreamer)),
+  fetchDreamer: dreamer => dispatch(fetchDreamer())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(DreamerInput);

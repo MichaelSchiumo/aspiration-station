@@ -3,6 +3,7 @@
 export const fetchAspirations = () => {
   return (dispatch) => {
     // dispatch({ type: 'LOAD_ASPIRATIONS'})
+
     fetch('http://localhost:3001/aspirations').then(response => {
       return response.json()
     }).then(responseJSON => {

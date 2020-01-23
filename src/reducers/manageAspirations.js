@@ -18,7 +18,7 @@ export default function manageAspirations(state = [], action) {
     case 'DELETE_ASPIRATION':
 
     const aspirations = state.filter(aspiration => aspiration.id !== action.payload);
-    
+
     return aspirations
 
 
@@ -33,10 +33,7 @@ export default function manageAspirations(state = [], action) {
           title : eleObj.attributes.title,
           category: eleObj.attributes.category,
           timeframe: eleObj.attributes.timeframe,
-          status: eleObj.attributes.status,
-          age: eleObj.attributes.age,
-          name: eleObj.attributes.name,
-          sex: eleObj.attributes.sex
+          status: eleObj.attributes.status
         }
         newObj.push(aspiration)
         return newObj

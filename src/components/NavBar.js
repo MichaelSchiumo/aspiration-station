@@ -25,6 +25,8 @@ class Navbar extends Component {
              <NavLink className="Nav-Link" style={{ marginRight: '10px' }} to="/aspirations">View Current Aspirations</NavLink>
              <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/aspirations/new">Create New Aspirations</NavLink>
              <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink>
+             <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers">View Dreamers</NavLink>
+
            </h2>
         </div>
       </div>

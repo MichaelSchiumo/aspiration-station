@@ -18,7 +18,7 @@ render() {
 
   return (
     <div>
-      {dreamer}
+      {this.props.dreamer}
     </div>
   );
 }

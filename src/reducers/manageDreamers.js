@@ -24,10 +24,10 @@ export default function manageDreamers(state = [], action) {
 
 
 
-    case 'LOAD_DREAMERS':
-
+    case 'LOAD_DREAMER':
+    
     return [
-      ...action.dreamers.reduce((newObj, eleObj) => {
+      ...action.dreamer.reduce((newObj, eleObj) => {
         const dreamer = {
           id: eleObj.id,
           age: eleObj.attributes.age,

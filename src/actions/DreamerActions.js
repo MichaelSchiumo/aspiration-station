@@ -7,6 +7,7 @@ export const fetchDreamer = () => {
     fetch('http://localhost:3001/dreamers').then(response => {
       return response.json()
     }).then(responseJSON => {
+      // console.log("test2")
       dispatch({ type: 'LOAD_DREAMER', dreamer: responseJSON.data })
     })
     .catch(error => console.log(error));
