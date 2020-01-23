@@ -12,7 +12,7 @@ class About extends Component {
           <div>
             <center><h2>Step 1:</h2></center>
             <b><u><h4>Create Goals in Different Categories:</h4></u></b>
-              <div class='square-content'><br />
+              <div className='square-content'><br />
                 <i><b><center>~ Personal</center></b></i><br />
                 <i><b><center>~ Educational</center></b></i><br />
                 <i><b><center>~ Health</center></b></i><br />
@@ -20,7 +20,7 @@ class About extends Component {
               </div>
               <center><h2>Step 2:</h2></center>
               <b><u><h4>Add Details To Craft Unique Aspirations:</h4></u></b>
-                <div class='square-content'><br />
+                <div className='square-content'><br />
                   <b><i><center>~ Category</center></i></b><br />
                   <b><i><center>~ Hours Per Week</center></i></b><br />
                   <b><i><center>~ Status</center></i></b><br />
@@ -28,7 +28,7 @@ class About extends Component {
               <div>
                 <center><h2>Step 3:</h2></center>
                 <u><h4> Keep Yourself On Track:</h4></u>
-                  <div class='square-content'><br />
+                  <div className='square-content'><br />
                     <i><b><center>~ Playlists</center></b></i><br />
                     <i><b><center>~ Quotes</center></b></i><br />
                     <i><b><center>~ Inspirational Books</center></b></i><br />

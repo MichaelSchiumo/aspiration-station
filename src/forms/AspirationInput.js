@@ -32,9 +32,9 @@ class AspirationInput extends Component {
       title: '',
       category: '',
       timeframe: '',
-      status: '',
+      status: ''
     });
-    return <div>Aspiration Created!</div>
+    return ( <div>Aspiration Created!</div> )
   }
 
   render() {
@@ -48,7 +48,7 @@ class AspirationInput extends Component {
           <input placeholder="Status" value={this.state.status} onChange={(event) => this.handleOnChange(event)} name="status" type="text"/><br/>
           <b><input type="submit" /></b>
         </form><br />
-      <h15>Click on the View Current Aspirations tab to See Your Current Dreams!</h15><br></br>
+      <h6>Click on the View Current Aspirations tab to See Your Current Dreams!</h6><br></br>
       </div>
     );
   }

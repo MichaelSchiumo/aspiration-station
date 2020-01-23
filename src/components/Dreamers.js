@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dreamer from './Dreamer';
+// import Dreamer from './Dreamer';
 import { connect } from 'react-redux';
 import { fetchDreamer } from '../actions/DreamerActions.js';
 
@@ -14,30 +14,19 @@ class Dreamers extends Component {
 
 
   render() {
-    console.log(this.props)
+
     return (
     <div>
-      Dreamers
-      {this.props.dreamers.map((dreamer) => {
+      const filteredDreamers = this.props.dreamers.map(dreamer => dreamer.id === action.id)
+      {this.props.dreamers.map(dreamer => {
         return (
           <div>
-            <ul key={dreamer.name}>{dreamer.name}</ul>
+            <ul>{dreamer.name}</ul>
           </div>
         )
       })}
     </div>
-      // <div>
-      //
-      //   // {this.props.dreamers.map((dreamer) => {
-      //   //   return (
-      //   //
-      //   //     <Dreamer
-      //   //     key={dreamer.id}
-      //   //     dreamer={dreamer}
-      //   // />
-      //   //   )
-      //   // })}
-      // </div>
+
     )
   }
 }

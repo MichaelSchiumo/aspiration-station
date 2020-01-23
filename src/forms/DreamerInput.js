@@ -15,7 +15,7 @@ class DreamerInput extends Component {
     };
 
     componentDidMount() {
-      console.log("test",this.props)
+    
       this.props.fetchDreamer()
     }
 
@@ -29,13 +29,9 @@ class DreamerInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const dreamer = this.state
-    const foundDreamer = this.props.dreamer.find(name => this.state.name === name )
-    if (foundDreamer) {
-      console.log(foundDreamer)
-    } else {
-        this.props.createDreamer(dreamer)
-    }
-    
+    this.props.createDreamer(dreamer)
+
+
     this.setState({
       name: '',
       age: '',
