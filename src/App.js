@@ -9,6 +9,10 @@ import AspirationsContainer from './containers/AspirationsContainer';
 import Aspirations from './components/Aspirations';
 import Aspiration from './components/Aspiration';
 import AspirationInput from './forms/AspirationInput'
+import QuotesContainer from './containers/QuotesContainer';
+import Quotes from './components/Quotes';
+import Quote from './components/Quote'
+import QuoteInput from './forms/QuoteInput';
 import { Router, Route} from 'react-router-dom';
 import About from './components/About';
 import './App.css';
@@ -29,7 +33,8 @@ function App() {
           <Route exact path={'/about'} component={About} />
           <Route exact path={'/dreamers/new'} component={DreamerInput} />
           <Route exact path={'/dreamers'} component={Dreamers} />
-
+          <Route exact path={'/quotes/new'} component={QuoteInput} />
+          <Route exact path={'/quotes'} component={Quotes} />
           <Route exact path={'/'} component={AspirationsContainer} />
           <Route exact path={'/aspirations'} component={Aspirations} />
           <Route exact path={'/aspiration/:id'} component={Aspiration} />

@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import '../App.css';
 import Dreamers from './Dreamers'
 import DreamerInput from '../forms/DreamerInput'
+import QuoteInput from '../forms/QuoteInput'
 
 
 class Navbar extends Component {
@@ -27,7 +28,8 @@ class Navbar extends Component {
                <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/aspirations/new">Create New Aspirations</NavLink>
               {(this.props.dreamers.length < 1) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink> : ''}
                <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers">View Dreamer Profile</NavLink>
-
+               <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/quotes/new">Create Quote</NavLink>
+               <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/quotes">View Current Quotes</NavLink>
              </h3>
           </div>
         </div>)
