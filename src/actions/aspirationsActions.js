@@ -30,6 +30,7 @@ export const createAspiration = (aspiration) => {
     .then(aspiration => {
       console.log(aspiration)
       dispatch(addAspiration(aspiration))
+      
     })
     .catch(error => {
       dispatch({type: 'CREATE_ASPIRATION', payload: error })

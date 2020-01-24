@@ -31,6 +31,7 @@ export const createQuote = (quote) => {
     .then(quote => {
       // console.log(quote)
       dispatch(addQuote(quote))
+      
     })
     .catch(error => {
       dispatch({type: 'CREATE_QUOTE', payload: error })

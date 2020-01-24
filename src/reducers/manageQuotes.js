@@ -8,7 +8,7 @@ export default function manageAspirations(state = [], action) {
     case 'ADD_QUOTE':
 
     {
-      debugger
+  
     console.log(action)
     return [
       ...state,

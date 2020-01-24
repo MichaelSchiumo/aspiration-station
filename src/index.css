@@ -6,6 +6,9 @@ li {
   position: center;
 }
 
+
+
+
 div {
   color: white;
   outline-color: white;
@@ -119,4 +122,53 @@ code {
 
 .square-content:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,10,1);
+}
+
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,10,1);
+}
+
+
+.container-color {
+
+  height: 90vh;
+
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.cell {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+}
+.cell-1 {
+  background: #282c34;
+}
+.cell-2 {
+  background: #282c34;
+}
+.cell-3 {
+  background: #282c34;
+}
+.cell-4 {
+  background: #282c34;
+}
+.cell-5 {
+  background: #282c34;
+}
+.cell-6 {
+  background: #282c34;
+}
+.cell-7 {
+  background: #282c34;
+}
+.cell-8 {
+  background: #282c34;
+}
+.cell-9 {
+  background: #282c34;
 }

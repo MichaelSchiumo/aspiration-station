@@ -54,7 +54,7 @@ class QuoteInput extends Component {
 // }
 
 const mapDispatchToProps = dispatch => ({
-  createQuote: quote => dispatch(createQuote(quote))
+  createQuote: (quote) => dispatch(createQuote(quote))
 })
 
 export default connect(null, mapDispatchToProps)(QuoteInput);
