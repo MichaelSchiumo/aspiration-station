@@ -6,19 +6,26 @@ export default function manageDreamers(state = [], action) {
 
   switch (action.type) {
     case 'ADD_DREAMER':
-    console.log(action)
+    {
+
+    // console.log(action)
     return [
       ...state,
-      action.payload.dreamer
+      action.payload
 
     ]
 
+  }
 
-
+//look at value coming in to the action (LOAD DREAMER)
+//there is no key once you add dreamer
+//make sure that we hit load dreamer after we render the dreamer container
+//make sure there is a key (dreamer) inside the action (line 13 in actions)
 
 
     case 'LOAD_DREAMER':
-
+    {
+      debugger
     return [
       ...action.dreamer.reduce((newObj, eleObj) => {
         const dreamer = {
@@ -31,7 +38,7 @@ export default function manageDreamers(state = [], action) {
         return newObj
       }, [])
     ]
-
+  }
     //add user - structure needs to match on both sides
 
     default:

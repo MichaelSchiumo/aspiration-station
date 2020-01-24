@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom';
 // import { FaAlignRight } from 'react-icons/fa'
 import '../App.css';
-import Dreamers from './Dreamers'
-import DreamerInput from '../forms/DreamerInput'
-import QuoteInput from '../forms/QuoteInput'
+// import DreamersContainer from '../containers/DreamersContainer'
+// import DreamerInput from '../forms/DreamerInput'
+// import QuoteInput from '../forms/QuoteInput'
 
 
 class Navbar extends Component {
@@ -13,7 +13,7 @@ class Navbar extends Component {
 
   render() {
     const {currentUser} = this.props
-
+    console.log(this.props.dreamers)
 
     return(
       <div className="NavBar">

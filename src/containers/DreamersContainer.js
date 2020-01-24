@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import Aspirations from './Aspirations'
-import { createDreamer } from '../actions/DreamerActions'
+import { createDreamer, fetchDreamer } from '../actions/DreamerActions'
 // import DreamerInput from '../forms/DreamerInput'
 // import Dreamer from '../components/Dreamer'
 import Dreamers from '../components/Dreamers'
 
 
 
+
 class DreamersContainer extends Component {
 
+  componentDidMount() {
+    this.props.fetchDreamer()
+  }
 
   render() {
      console.log(this.props)
@@ -23,9 +27,16 @@ class DreamersContainer extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  console.log(state)
+}
 
+export default connect(mapStateToProps, {createDreamer, fetchDreamer} )(DreamersContainer)
 
-export default connect(null, {createDreamer} )(DreamersContainer)
+//connect links to Reducer
+//gives action functions ability to dispatch function (render) by calling fetch
+//createDreamer is being stored in props
+//only the function in the properties is going to be able to dispatch
 
 //connect connects React components to Redux functionality
 //get rid of Redux (refactor)

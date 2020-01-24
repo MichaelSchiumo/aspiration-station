@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 // import Dreamer from './components/Dreamer'
 import DreamersContainer from './containers/DreamersContainer'
 import DreamerInput from './forms/DreamerInput'
-import Dreamers from './components/Dreamers'
+// import Dreamers from './components/Dreamers'
 import AspirationsContainer from './containers/AspirationsContainer';
 import Aspirations from './components/Aspirations';
 import Aspiration from './components/Aspiration';
@@ -32,7 +32,7 @@ function App() {
           <NavBar />
           <Route exact path={'/about'} component={About} />
           <Route exact path={'/dreamers/new'} component={DreamerInput} />
-          <Route exact path={'/dreamers'} component={Dreamers} />
+          <Route exact path={'/dreamers'} component={DreamersContainer} />
           <Route exact path={'/quotes/new'} component={QuoteInput} />
           <Route exact path={'/quotes'} component={Quotes} />
           <Route exact path={'/'} component={AspirationsContainer} />

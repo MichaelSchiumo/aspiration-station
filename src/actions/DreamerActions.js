@@ -8,9 +8,11 @@ export const fetchDreamer = () => {
     fetch('http://localhost:3001/dreamers').then(response => {
       return response.json()
     }).then(responseJSON => {
-      
+
       // console.log("test2")
       dispatch({ type: 'LOAD_DREAMER', dreamer: responseJSON.data })
+      //make sure dreamer on line 13 is dreamers (array)
+      
     })
     .catch(error => console.log(error));
   }
@@ -20,7 +22,7 @@ const addDreamer = (dreamer) => {
   return {type: 'ADD_DREAMER', payload: dreamer.data}
 }
 
-export const createDreamer = (dreamer) => {
+export const createDreamer = (dreamer, history) => {
 
   return dispatch => {
     return fetch('http://localhost:3001/dreamers', {
@@ -32,8 +34,8 @@ export const createDreamer = (dreamer) => {
     })
     .then(response => response.json())
     .then(dreamer => {
-
       dispatch(addDreamer(dreamer))
+      history.push('/dreamers')
     })
     .catch(error => {
       dispatch({type: 'CREATE_DREAMER', payload: error })

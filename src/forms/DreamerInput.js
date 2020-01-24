@@ -14,10 +14,10 @@ class DreamerInput extends Component {
 
     };
 
-    componentDidMount() {
-    
-      this.props.fetchDreamer()
-    }
+    // componentDidMount() {
+    //
+    //   this.props.fetchDreamer()
+    // }
 
   handleOnChange = event => {
 
@@ -29,7 +29,7 @@ class DreamerInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const dreamer = this.state
-    this.props.createDreamer(dreamer)
+    this.props.createDreamer(dreamer, this.props.history)
 
 
     this.setState({
@@ -55,13 +55,13 @@ class DreamerInput extends Component {
   }
 };
 
-const mapStateToProps = state => {
-  return ({dreamers: state.dreamers})
-}
+// const mapStateToProps = state => {
+//   return ({dreamers: state.dreamers})
+// }
 
 const mapDispatchToProps = dispatch => ({
-  createDreamer: dreamer => dispatch(createDreamer(dreamer)),
-  fetchDreamer: dreamer => dispatch(fetchDreamer())
+  createDreamer: dreamer => dispatch(createDreamer(dreamer))
+  // fetchDreamer: dreamer => dispatch(fetchDreamer())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(DreamerInput);
+export default connect(null, mapDispatchToProps)(DreamerInput);
