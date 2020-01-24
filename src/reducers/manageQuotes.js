@@ -6,7 +6,7 @@ export default function manageAspirations(state = [], action) {
 
   switch (action.type) {
     case 'ADD_QUOTE':
-
+    
     console.log(action)
     return [
       ...state,
@@ -26,7 +26,7 @@ export default function manageAspirations(state = [], action) {
 
 
     case 'LOAD_QUOTES':
-    debugger
+
     return [
       ...action.quotes.reduce((newObj, eleObj) => {
         const quote = {

@@ -7,6 +7,7 @@ export const fetchQuotes = () => {
     fetch('http://localhost:3001/quotes').then(response => {
       return response.json()
     }).then(responseJSON => {
+
       dispatch({ type: 'LOAD_QUOTES', quotes: responseJSON.data })
     })
     .catch(error => console.log(error));
@@ -28,8 +29,9 @@ export const createQuote = (quote) => {
     })
     .then(response => response.json())
     .then(quote => {
-
-      dispatch(addQuote(quote))
+      debugger
+      console.log(quote)
+      // dispatch(addQuote(quote))
     })
     .catch(error => {
       dispatch({type: 'CREATE_QUOTE', payload: error })

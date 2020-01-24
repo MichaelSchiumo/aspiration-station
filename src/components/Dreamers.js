@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import { fetchDreamer } from '../actions/DreamerActions.js';
 import NavBar from './NavBar'
 
-
-
 class Dreamers extends Component {
 
   componentDidMount() {
@@ -16,11 +14,13 @@ class Dreamers extends Component {
   render() {
 
     const dreamers = this.props.dreamers
-    const currentUser = this.props.dreamers.filter(id => dreamers.id === this.props.id)
-    const filteredDreamers = dreamers.filter(id => dreamers.id === this.props.id)
-    console.log(dreamers)
+    const currentUser = this.props.dreamers[0]
+    const filteredDreamers = dreamers.filter(dreamer => dreamer.id === this.props.id)
+    console.log(this.props.id)
     return (
       <div>
+
+        //access through index value
         {filteredDreamers.map((dreamer) => {
           return (
 
