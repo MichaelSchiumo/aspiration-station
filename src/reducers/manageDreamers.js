@@ -25,7 +25,7 @@ export default function manageDreamers(state = [], action) {
 
     case 'LOAD_DREAMER':
     {
-      debugger
+      
     return [
       ...action.dreamer.reduce((newObj, eleObj) => {
         const dreamer = {

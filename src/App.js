@@ -13,12 +13,12 @@ import QuotesContainer from './containers/QuotesContainer';
 import Quotes from './components/Quotes';
 import Quote from './components/Quote'
 import QuoteInput from './forms/QuoteInput';
-import { Router, Route} from 'react-router-dom';
+import { Router, Route, withRouter} from 'react-router-dom';
 import About from './components/About';
 import './App.css';
 
-import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
+// import { createBrowserHistory } from 'history';
+// const history = createBrowserHistory();
 
 
 
@@ -26,7 +26,6 @@ const history = createBrowserHistory();
 function App() {
 
   return (
-    <Router history={history}>
       <div className="App">
         <header className="App-header">
           <NavBar />
@@ -35,17 +34,17 @@ function App() {
           <Route exact path={'/dreamers'} component={DreamersContainer} />
           <Route exact path={'/quotes/new'} component={QuoteInput} />
           <Route exact path={'/quotes'} component={Quotes} />
-          <Route exact path={'/'} component={AspirationsContainer} />
+          <Route exact path={'/quote/:id'} component={Quote} />
           <Route exact path={'/aspirations'} component={Aspirations} />
           <Route exact path={'/aspiration/:id'} component={Aspiration} />
           <Route exact path={'/aspirations/new'} component={AspirationInput} />
         </header>
     </div>
-  </ Router>
+
   );
 }
 
-export default App;
+export default withRouter(App);
 
 
 //add routes

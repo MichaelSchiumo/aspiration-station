@@ -13,6 +13,7 @@ class Quote extends Component {
 
 render() {
   const { quote, deleteQuotes } = this.props;
+  console.log(this.props)
 
   return (
     <div>

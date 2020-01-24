@@ -29,6 +29,7 @@ class DreamerInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const dreamer = this.state
+    console.log(this.props.history, "history was...")
     this.props.createDreamer(dreamer, this.props.history)
 
 

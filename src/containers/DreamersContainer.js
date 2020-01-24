@@ -27,11 +27,11 @@ class DreamersContainer extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  console.log(state)
-}
+// const mapStateToProps = state => {
+//   { dreamers: state.dreamers }
+// }
 
-export default connect(mapStateToProps, {createDreamer, fetchDreamer} )(DreamersContainer)
+export default connect(null, {createDreamer, fetchDreamer} )(DreamersContainer)
 
 //connect links to Reducer
 //gives action functions ability to dispatch function (render) by calling fetch

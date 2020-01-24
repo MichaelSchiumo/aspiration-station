@@ -28,7 +28,7 @@ export const createAspiration = (aspiration) => {
     })
     .then(response => response.json())
     .then(aspiration => {
-
+      console.log(aspiration)
       dispatch(addAspiration(aspiration))
     })
     .catch(error => {

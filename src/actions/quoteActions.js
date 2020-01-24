@@ -29,9 +29,8 @@ export const createQuote = (quote) => {
     })
     .then(response => response.json())
     .then(quote => {
-      debugger
-      console.log(quote)
-      // dispatch(addQuote(quote))
+      // console.log(quote)
+      dispatch(addQuote(quote))
     })
     .catch(error => {
       dispatch({type: 'CREATE_QUOTE', payload: error })

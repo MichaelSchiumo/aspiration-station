@@ -6,14 +6,16 @@ export default function manageAspirations(state = [], action) {
 
   switch (action.type) {
     case 'ADD_QUOTE':
-    
+
+    {
+      debugger
     console.log(action)
     return [
       ...state,
-      action.payload.quote
+      action.payload
 
     ]
-
+}
 
 
     case 'DELETE_QUOTE':

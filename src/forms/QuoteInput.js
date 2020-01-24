@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createQuote } from '../actions/quoteActions'
 
+
 class QuoteInput extends Component {
 
 //create two separate forms
@@ -48,12 +49,12 @@ class QuoteInput extends Component {
   }
 };
 
-const mapStateToProps = state => {
-  return ({quotes: state.quotes})
-}
+// const mapStateToProps = state => {
+//   return ({quotes: state.quotes})
+// }
 
 const mapDispatchToProps = dispatch => ({
   createQuote: quote => dispatch(createQuote(quote))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(QuoteInput);
+export default connect(null, mapDispatchToProps)(QuoteInput);

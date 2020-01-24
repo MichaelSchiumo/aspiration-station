@@ -12,7 +12,7 @@ export const fetchDreamer = () => {
       // console.log("test2")
       dispatch({ type: 'LOAD_DREAMER', dreamer: responseJSON.data })
       //make sure dreamer on line 13 is dreamers (array)
-      
+
     })
     .catch(error => console.log(error));
   }
@@ -35,7 +35,8 @@ export const createDreamer = (dreamer, history) => {
     .then(response => response.json())
     .then(dreamer => {
       dispatch(addDreamer(dreamer))
-      history.push('/dreamers')
+
+      history.push('/')
     })
     .catch(error => {
       dispatch({type: 'CREATE_DREAMER', payload: error })
