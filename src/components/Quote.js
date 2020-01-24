@@ -19,8 +19,7 @@ render() {
     <div>
 
         <div className="card" key={quote.id}>
-          <br /><h2>{quote.author}</h2>
-          <b><label>Quote</label></b>
+          <u><br /><h2>{quote.author}</h2></u>
           <i><p>{quote.content}</p></i>
           <button onClick={this.handleOnClick}></button>
         </div>

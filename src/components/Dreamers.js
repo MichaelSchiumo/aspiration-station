@@ -28,7 +28,7 @@ class Dreamers extends Component {
                 <h2>{currentDreamer.age} years and still going strong!</h2>
 
 
-                <p>Passion?</p>
+                
               </div>
             </div>
 

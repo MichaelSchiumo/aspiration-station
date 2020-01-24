@@ -1,6 +1,7 @@
 import React from 'react';
 import W3 from './W3.css'
 import NavBar from './components/NavBar';
+import Home from './components/Home'
 // import Dreamer from './components/Dreamer'
 import DreamersContainer from './containers/DreamersContainer'
 import DreamerInput from './forms/DreamerInput'
@@ -29,6 +30,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <NavBar />
+          <Route exact path={'/'} component={Home} />
           <Route exact path={'/about'} component={About} />
           <Route exact path={'/dreamers/new'} component={DreamerInput} />
           <Route exact path={'/dreamers'} component={DreamersContainer} />

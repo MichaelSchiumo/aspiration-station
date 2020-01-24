@@ -12,7 +12,7 @@ export default function manageAspirations(state = [], action) {
     console.log(action)
     return [
       ...state,
-      action.payload
+      action.payload.quote
 
     ]
 }
