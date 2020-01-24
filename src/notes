@@ -20,3 +20,12 @@
 
 
   -fix form css
+
+
+AUTH
+
+  Turn back on sessions and cookies
+  enable credentials (Rails settings)
+  Whitelist frontend config
+  set up Auth with sessions
+  On frontend, every fetch request must have a key-value pair called credentials pointing to include

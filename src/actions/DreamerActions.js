@@ -35,7 +35,6 @@ export const createDreamer = (dreamer, history) => {
     .then(response => response.json())
     .then(dreamer => {
       dispatch(addDreamer(dreamer))
-
       history.push('/')
     })
     .catch(error => {

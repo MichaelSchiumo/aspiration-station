@@ -61,7 +61,7 @@ class DreamerInput extends Component {
 // }
 
 const mapDispatchToProps = dispatch => ({
-  createDreamer: dreamer => dispatch(createDreamer(dreamer))
+  createDreamer: (dreamer, history) => dispatch(createDreamer(dreamer, history))
   // fetchDreamer: dreamer => dispatch(fetchDreamer())
 })
 

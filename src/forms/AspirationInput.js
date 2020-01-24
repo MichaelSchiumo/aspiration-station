@@ -28,6 +28,7 @@ class AspirationInput extends Component {
     event.preventDefault();
     const aspiration = this.state
     this.props.createAspiration(aspiration)
+    console.log(aspiration)
     this.setState({
       title: '',
       category: '',
