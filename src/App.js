@@ -10,6 +10,10 @@ import AspirationsContainer from './containers/AspirationsContainer';
 import Aspirations from './components/Aspirations';
 import Aspiration from './components/Aspiration';
 import AspirationInput from './forms/AspirationInput'
+import SongsContainer from './containers/SongsContainer'
+import Songs from './components/Songs'
+import Song from './components/Song'
+import SongInput from './forms/SongInput'
 import QuotesContainer from './containers/QuotesContainer';
 import Quotes from './components/Quotes';
 import Quote from './components/Quote'
