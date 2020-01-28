@@ -18,14 +18,17 @@ class Navbar extends Component {
 
     return(
       <div className="NavBar">
-        <h1><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/">Welcome to Aspiration Station!</NavLink></h1>
+        <h1><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/">Welcome to Aspiration Station!</NavLink></h1><br />
+        <h2><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/inspo">#Inspo</NavLink></h2>
           <img src="https://cdn.dribbble.com/users/184036/screenshots/1164252/a-logo.jpg" />
           <h3><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/about">Get Started</NavLink></h3>
 
 
 
+
           <div style={{ borderBottom: '2px solid black', paddingBottom: '10px', marginBottom: '12px' }}>
             <h3>
+
                {(this.props.aspirations.length > 0) ? <NavLink className="Nav-Link" style={{ marginRight: '10px' }} to="/aspirations">View Current Aspirations</NavLink> : ''}
                {(this.props.dreamers.length > 0) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/aspirations/new">Create New Aspirations</NavLink> : ''}
               {(this.props.dreamers.length < 1) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink> : ''}

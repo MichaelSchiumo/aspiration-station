@@ -16,6 +16,7 @@ import Quote from './components/Quote'
 import QuoteInput from './forms/QuoteInput';
 import { Router, Route, withRouter} from 'react-router-dom';
 import About from './components/About';
+import Inspo from './components/Inspo'
 import './App.css';
 
 // import { createBrowserHistory } from 'history';
@@ -32,6 +33,7 @@ function App() {
           <NavBar />
           <Route exact path={'/'} component={Home} />
           <Route exact path={'/about'} component={About} />
+          <Route exact path={'/inspo'} component={Inspo} />
           <Route exact path={'/dreamers/new'} component={DreamerInput} />
           <Route exact path={'/dreamers'} component={DreamersContainer} />
           <Route exact path={'/quotes/new'} component={QuoteInput} />
