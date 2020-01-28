@@ -8,7 +8,7 @@ export default function manageSongs(state = [], action) {
     case 'ADD_SONG':
 
     {
-
+    debugger
     console.log(action)
     return [
       ...state,

@@ -32,6 +32,8 @@ class Navbar extends Component {
                {(this.props.dreamers.length > 0) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers">View Dreamer Profile</NavLink> : ''}
                {(this.props.dreamers.length > 0) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/quotes/new">Create Quotes</NavLink> : ''}
               {(this.props.quotes.length > 0) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/quotes">View Current Quotes</NavLink> : ''}
+              {(this.props.dreamers.length > 0) ? <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/songs/new">Create Songs</NavLink> : ''}
+              <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/songs">View Current Songs</NavLink> 
              </h3>
           </div>
         </div>)
@@ -41,7 +43,8 @@ class Navbar extends Component {
 const mapStateToProps = state => {
   return {dreamers: state.dreamers,
     aspirations: state.aspirations,
-    quotes: state.quotes
+    quotes: state.quotes,
+    songs: state.songs
   }
 }
 

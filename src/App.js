@@ -44,6 +44,9 @@ function App() {
           <Route exact path={'/aspirations'} component={Aspirations} />
           <Route exact path={'/aspiration/:id'} component={Aspiration} />
           <Route exact path={'/aspirations/new'} component={AspirationInput} />
+          <Route exact path={'/songs/new'} component={SongInput} />
+          <Route exact path={'/songs'} component={Songs} />
+          <Route exact path={'/songs/:id'} component={Song} />
         </header>
     </div>
 
