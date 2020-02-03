@@ -29,7 +29,7 @@ class DreamerInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     const dreamer = this.state
-    console.log(this.props.history, "history was...")
+    
     this.props.createDreamer(dreamer, this.props.history)
 
 
@@ -56,9 +56,6 @@ class DreamerInput extends Component {
   }
 };
 
-// const mapStateToProps = state => {
-//   return ({dreamers: state.dreamers})
-// }
 
 const mapDispatchToProps = dispatch => ({
   createDreamer: (dreamer, history) => dispatch(createDreamer(dreamer, history))

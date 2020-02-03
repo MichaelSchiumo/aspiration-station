@@ -49,9 +49,3 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(Navbar);
-
-//connect components to state with users (store with current user)
-//map current user to navlink
-//do conditional logic
-
-{/* <NavLink className="Nav-Link" style={{ marginLeft: '10px' }} to="/dreamers/new">Create Dreamer Profile</NavLink> */}

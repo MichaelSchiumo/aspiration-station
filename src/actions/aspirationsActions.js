@@ -14,10 +14,13 @@ export const fetchAspirations = () => {
 }
 
 const addAspiration = (aspiration) => {
+
   return {type: 'ADD_ASPIRATION', payload: aspiration}
 }
 
 export const createAspiration = (aspiration) => {
+
+
   return dispatch => {
     return fetch('http://localhost:3001/aspirations', {
       method: "POST",
@@ -28,14 +31,20 @@ export const createAspiration = (aspiration) => {
     })
     .then(response => response.json())
     .then(aspiration => {
-      console.log(aspiration)
+
+
+
       dispatch(addAspiration(aspiration))
-      
+
     })
     .catch(error => {
+
+
       dispatch({type: 'CREATE_ASPIRATION', payload: error })
     })
+
   }
+
 }
 
 
@@ -47,8 +56,9 @@ export const deleteAspirations = (aspiration) => {
       })
       .then(response => response.json())
       .then(data => {
+
         // history.push('/aspirations')
-        console.log(data)
+        // console.log(data)
         dispatch({type: 'DELETE_ASPIRATION', payload: aspiration.id })
       })
 

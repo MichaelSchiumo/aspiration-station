@@ -7,10 +7,7 @@ import { fetchQuotes, deleteQuotes } from '../actions/quoteActions';
 
 class Quotes extends Component {
 
-  // componentDidMount() {
-  //   this.props.fetchQuotes()
-  // }
-
+  
 
 
   render() {

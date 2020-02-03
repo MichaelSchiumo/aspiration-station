@@ -1,3 +1,5 @@
+//
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createAspiration } from '../actions/aspirationsActions'
@@ -25,10 +27,13 @@ class AspirationInput extends Component {
   }
 
   handleOnSubmit = event => {
+
     event.preventDefault();
     const aspiration = this.state
     this.props.createAspiration(aspiration)
-    console.log(aspiration)
+
+
+    
     this.setState({
       title: '',
       category: '',
@@ -39,6 +44,8 @@ class AspirationInput extends Component {
   }
 
   render() {
+
+
     return (
       <div>
         <label>Add a New Aspiration!</label>

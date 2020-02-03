@@ -19,8 +19,13 @@ render() {
     <div>
 
         <div className="card" key={quote.id}>
-          <u><br /><h2>{quote.author}</h2></u>
-          <i><p>{quote.content}</p></i>
+          <u>
+            <br />
+            <h2>{quote.author}</h2>
+          </u>
+          <i>
+            <p>{quote.content}</p>
+          </i>
           <button onClick={this.handleOnClick}></button>
         </div>
 
@@ -32,10 +37,3 @@ render() {
 
 
 export default Quote;
-
-// rerender using history
-//pass down history
-//history comes from component with routes
-
-
-//create navbar

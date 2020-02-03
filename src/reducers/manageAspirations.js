@@ -1,12 +1,13 @@
 // import uuid from 'uuid';
 // export const cuidFn = cuid;
-
+//
 export default function manageAspirations(state = [], action) {
+
 
 
   switch (action.type) {
     case 'ADD_ASPIRATION':
-    console.log(action)
+    // console.log(action)
     return [
       ...state,
       action.payload.aspiration
@@ -16,7 +17,7 @@ export default function manageAspirations(state = [], action) {
 
 
     case 'DELETE_ASPIRATION':
-
+    
     const aspirations = state.filter(aspiration => aspiration.id !== action.payload);
 
     return aspirations
@@ -34,7 +35,7 @@ export default function manageAspirations(state = [], action) {
           category: eleObj.attributes.category,
           timeframe: eleObj.attributes.timeframe,
           status: eleObj.attributes.status,
-          
+
           // name: eleObj.attributes.name,
           // age: eleObj.attributes.age,
           // sex: eleObj.attributes.sex

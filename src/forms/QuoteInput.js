@@ -49,9 +49,7 @@ class QuoteInput extends Component {
   }
 };
 
-// const mapStateToProps = state => {
-//   return ({quotes: state.quotes})
-// }
+
 
 const mapDispatchToProps = dispatch => ({
   createQuote: (quote) => dispatch(createQuote(quote))

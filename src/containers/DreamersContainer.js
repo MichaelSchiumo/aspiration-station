@@ -28,17 +28,6 @@ class DreamersContainer extends Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   { dreamers: state.dreamers }
-// }
+
 
 export default connect(null, {createDreamer, fetchDreamer} )(DreamersContainer)
-
-//connect links to Reducer
-//gives action functions ability to dispatch function (render) by calling fetch
-//createDreamer is being stored in props
-//only the function in the properties is going to be able to dispatch
-
-//connect connects React components to Redux functionality
-//get rid of Redux (refactor)
-//we have access to the aspirations component through import at the top of this file

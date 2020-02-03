@@ -13,7 +13,7 @@ class Dreamers extends Component {
 
     const dreamers = this.props.dreamers
     const currentDreamer = this.props.dreamers[0]
-    // const filteredDreamers = dreamers.filter(dreamer => dreamer.id === this.props.id)
+
     console.log(this.props)
     return (
 
@@ -28,7 +28,6 @@ class Dreamers extends Component {
                 <h2>{currentDreamer.age} years and still going strong!</h2>
 
 
-                
               </div>
             </div>
 
@@ -38,9 +37,7 @@ class Dreamers extends Component {
   }
 }
 
-// const mapStateToProps = state => {
-//   return { currentDreamer: state.currentDreamer}
-// }
+
 
 const mapStateToProps = state => {
   return { dreamers: state.dreamers }

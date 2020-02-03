@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 // import { deleteAspirations } from '../actions/aspirationsActions'
-
+//
 class Aspiration extends Component {
 
   handleOnClick = event => {
-
+    console.log("delete aspiration handle submit")
   this.props.deleteAspirations(this.props.aspiration);
 }
 
@@ -13,7 +13,7 @@ class Aspiration extends Component {
 
 render() {
   const { aspiration, deleteAspirations } = this.props;
-
+  console.log('aspiration render')
   return (
     <div>
 

@@ -24,7 +24,3 @@ class AspirationsContainer extends Component {
 
 
 export default connect(null, {createAspiration} )(AspirationsContainer)
-
-//connect connects React components to Redux functionality
-//get rid of Redux (refactor)
-//we have access to the aspirations component through import at the top of this file
