@@ -32,7 +32,9 @@ div {
   overflow: hidden;
   list-style-type: none;
   font-weight: bold;
+  text-decoration: none;
 }
+
 
 .show-nav {
     height: 120px;
