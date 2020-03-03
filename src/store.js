@@ -8,7 +8,7 @@ import manageQuotes from './reducers/manageQuotes'
 // export combineReducers({aspirations: manageAspirations})
 // export default createStore(dreamerReducer);
 
-const reducer = combineReducers({aspirations: manageAspirations, dreamers: manageDreamers, quotes: manageQuotes, , songs: manageSongs})
+const reducer = combineReducers({aspirations: manageAspirations, dreamers: manageDreamers, quotes: manageQuotes})
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, composeEnhancer(applyMiddleware(thunk)))
