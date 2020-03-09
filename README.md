@@ -5,6 +5,7 @@ To get started, clone this repo, and change directories into ~/aspiration-statio
 Once you have each of these repositories cloned and open in separate tabs within your terminal, you can run the following commands:
 
   -For the backend, run 'rails s -p 3001'
+  
   -For the frontend, run 'npm start'
 
 
@@ -12,7 +13,7 @@ Once you have each of these repositories cloned and open in separate tabs within
 
 
   Frameworks
-  -This application was built using Javascript in the React framework, with state management via the Redux Library on the frontend. The backend was developed using Ruby on Rails. 
+  -This application was built using Javascript in the React framework, with state management via the Redux Library on the frontend. The backend was developed using Ruby on Rails.
 
 
 
