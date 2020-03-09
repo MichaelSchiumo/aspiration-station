@@ -5,17 +5,9 @@ class Home extends Component {
   //add Welcome Current User
 
 
-  state = {
-    counter: 0
-  }
 
-   handleOnClick = () => {
-     this.setState(prevState => {
-       return (
-         {counter: prevState.counter + 1}
-       )
-     })
-   }
+
+
 
     render(){
 
@@ -38,7 +30,7 @@ class Home extends Component {
             <img src='https://i.ytimg.com/vi/c3kbmNhY06c/hqdefault.jpg'></img>
 
           </div>
-          <div onClick={this.handleOnClick}>{this.state.counter}</div>
+          
         </div>
       </div>
 
