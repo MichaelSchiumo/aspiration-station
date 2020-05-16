@@ -16,7 +16,7 @@ Once you have each of these repositories cloned and open in separate tabs within
   -This application was built using Javascript in the React framework, with state management via the Redux Library on the frontend. The backend was developed using Ruby on Rails. The app was deployed using Node.js.
 
 
-The application is also available via Heroku at the follow url: 
+The application is also available via Heroku at the follow url: https://aspiration-station.herokuapp.com
 
 
   Notes:
