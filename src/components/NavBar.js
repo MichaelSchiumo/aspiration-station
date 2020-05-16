@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom';
-// import { FaAlignRight } from 'react-icons/fa'
 import '../App.css';
-import DreamersContainer from '../containers/DreamersContainer'
-// import DreamerInput from '../forms/DreamerInput'
-// import QuoteInput from '../forms/QuoteInput'
+
 
 
 class Navbar extends Component {
@@ -20,7 +17,7 @@ class Navbar extends Component {
       <div className="NavBar">
         <h1><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/">Welcome to Aspiration Station!</NavLink></h1><br />
         <h2><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/inspo">#Inspo</NavLink></h2>
-          <img src="https://cdn.dribbble.com/users/184036/screenshots/1164252/a-logo.jpg" />
+          <img src="https://cdn.dribbble.com/users/184036/screenshots/1164252/a-logo.jpg" alt='' />
           <h3><NavLink className="Nav-Link" style={{ marginCenter: '10px' }} to="/about">Get Started</NavLink></h3>
 
 

@@ -1,20 +1,18 @@
 import React from 'react';
-import W3 from './W3.css'
+import W3 from './W3.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home'
 // import Dreamer from './components/Dreamer'
 import DreamersContainer from './containers/DreamersContainer'
 import DreamerInput from './forms/DreamerInput'
 // import Dreamers from './components/Dreamers'
-import AspirationsContainer from './containers/AspirationsContainer';
 import Aspirations from './components/Aspirations';
 import Aspiration from './components/Aspiration';
 import AspirationInput from './forms/AspirationInput'
-import QuotesContainer from './containers/QuotesContainer';
 import Quotes from './components/Quotes';
 import Quote from './components/Quote'
 import QuoteInput from './forms/QuoteInput';
-import { Router, Route, withRouter} from 'react-router-dom';
+import {Route, withRouter} from 'react-router-dom';
 import About from './components/About';
 import Inspo from './components/Inspo'
 import './App.css';

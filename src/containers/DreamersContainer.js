@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import Aspirations from './Aspirations'
 import { createDreamer, fetchDreamer } from '../actions/DreamerActions'
-// import DreamerInput from '../forms/DreamerInput'
-// import Dreamer from '../components/Dreamer'
-import Dreamers from '../components/Dreamers'
-import Home from '../components/Home';
+import Dreamers from '../components/Dreamers';
 
 
 

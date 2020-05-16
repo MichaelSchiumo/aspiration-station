@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import { deleteAspirations } from '../actions/aspirationsActions'
-//
+
+
 class Aspiration extends Component {
 
   handleOnClick = event => {

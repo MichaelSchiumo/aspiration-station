@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Aspiration from './Aspiration';
 import { connect } from 'react-redux';
 import { fetchAspirations, deleteAspirations } from '../actions/aspirationsActions';
-import NavBar from '../components/NavBar';
-
 
 
 class Aspirations extends Component {
