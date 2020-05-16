@@ -27,6 +27,7 @@ class DreamerInput extends Component {
   }
 
   handleOnSubmit = event => {
+    debugger
     event.preventDefault();
     const dreamer = this.state
     
