@@ -12,7 +12,7 @@ class Aspiration extends Component {
     const { aspiration, deleteAspirations } = this.props;
     console.log('aspiration render');
     return (
-      <div style={aspirationStyle}>
+      <div>
         <div className='card' key={aspiration.id}>
           <br />
           <h2>{aspiration.title}</h2>
@@ -41,12 +41,6 @@ class Aspiration extends Component {
     );
   }
 }
-
-const aspirationStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridGap: '1 rem',
-};
 
 export default Aspiration;
 
